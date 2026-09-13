@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TopNews — Supporto e Privacy Policy</title>
+<style>
+  :root {
+    --bg: #1c1e21;
+    --accent: #00C896;
+    --text: #f0f0f0;
+    --muted: #a0a0a0;
+    --card: #26282c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    padding: 48px 24px 24px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+  }
+  header h1 {
+    color: var(--accent);
+    font-size: 2rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.5px;
+  }
+  header p { color: var(--muted); margin: 0; }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px;
+    background: var(--card);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.2s;
+  }
+  nav a:hover { background: rgba(0,200,150,0.15); }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  section { margin-bottom: 56px; }
+  .card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 32px;
+  }
+  h2 {
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  h3 {
+    color: var(--text);
+    font-size: 1.15rem;
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+  a.link { color: var(--accent); }
+  .email-box {
+    display: inline-block;
+    background: rgba(0,200,150,0.12);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 16px 24px;
+    font-size: 1.1rem;
+    margin-top: 12px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.95rem;
+  }
+  td, th {
+    border-bottom: 1px solid #3a3c40;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  th { color: var(--accent); }
+  ul { padding-left: 20px; }
+  footer {
+    text-align: center;
+    padding: 32px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-top: 1px solid #333;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>TopNews</h1>
+  <p>Notizie, scenari geopolitici ed economici generati dall'AI</p>
+</header>
+
+<nav>
+  <a href="#supporto">Supporto</a>
+  <a href="#privacy">Privacy Policy</a>
+</nav>
+
+<main>
+
+  <section id="supporto">
+    <div class="card">
+      <h2>Contattaci</h2>
+      <p>Per qualsiasi domanda, segnalazione o richiesta relativa a TopNews, scrivici all'indirizzo:</p>
+      <div class="email-box">📧 top1news24h@gmail.com</div>
+      <p style="margin-top:24px;">Rispondiamo il prima possibile a tutte le richieste di assistenza tecnica, suggerimenti sull'app e richieste relative alla protezione dei dati personali.</p>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="card">
+      <h2>Privacy Policy – TopNews</h2>
+      <p class="updated">Ultimo aggiornamento: 13 settembre 2026</p>
+
+      <p>La presente informativa descrive le modalità con cui l'applicazione TopNews ("TopNews" o "App") tratta i dati personali degli utenti, ai sensi del Regolamento (UE) 2016/679 ("GDPR") e della normativa italiana applicabile in materia di protezione dei dati personali.</p>
+
+      <h3>1. Titolare del trattamento</h3>
+      <p>Il Titolare del trattamento dei dati personali è:<br>
+      <strong>Giovanni Cipriani</strong><br>
+      Progetto/App: TopNews</p>
+      <p>Email di contatto e richieste privacy: <a class="link" href="mailto:top1news24h@gmail.com">top1news24h@gmail.com</a></p>
+      <p>TopNews è attualmente gestita dal Titolare come persona fisica e non attraverso una società o altra entità giuridica.</p>
+
+      <h3>2. Dati personali trattati</h3>
+      <p>TopNews tratta i dati necessari per consentire la registrazione, il funzionamento dell'App e l'utilizzo delle funzionalità richieste dall'utente.</p>
+
+      <p><strong>2.1 Dati dell'account</strong><br>
+      Per creare e utilizzare un account possono essere trattati: indirizzo email, identificativo univoco dell'account (UID), credenziali necessarie all'autenticazione. L'autenticazione è gestita attraverso Firebase Authentication. TopNews non conserva direttamente la password dell'utente.</p>
+
+      <p><strong>2.2 Interessi e preferenze</strong><br>
+      TopNews può memorizzare: categorie di notizie selezionate dall'utente, stato di completamento dell'onboarding, preferenze relative all'interfaccia e alla lingua, informazioni necessarie alla personalizzazione del feed. Questi dati sono associati all'account dell'utente.</p>
+
+      <p><strong>2.3 Like</strong><br>
+      Quando un utente mette "like" a un articolo, TopNews memorizza l'associazione tra l'account dell'utente e l'articolo interessato, oltre a un conteggio aggregato dei like ricevuti. Quando l'account viene eliminato, i like riconducibili all'utente vengono eliminati e i relativi conteggi aggiornati.</p>
+
+      <p><strong>2.4 Utilizzo delle funzionalità AI</strong><br>
+      TopNews memorizza contatori relativi all'utilizzo giornaliero delle funzionalità di intelligenza artificiale, come Scenario e Deep Dive/Full Analysis, esclusivamente per applicare i limiti di utilizzo previsti dal servizio.</p>
+
+      <p><strong>2.5 Ricerche</strong><br>
+      Quando l'utente utilizza la funzione di ricerca, il testo inserito viene utilizzato per individuare notizie pertinenti e può essere trasmesso a NewsAPI. TopNews non memorizza le query di ricerca nel profilo dell'utente. L'utente è invitato a non inserire nelle ricerche informazioni personali o sensibili non necessarie.</p>
+
+      <p><strong>2.6 Dati relativi all'abbonamento Premium</strong><br>
+      Per fornire l'abbonamento Premium, TopNews tratta: stato dell'abbonamento (attivo, scaduto, in periodo di prova), tipologia di piano sottoscritto (settimanale o mensile), date di inizio e rinnovo, identificativo univoco assegnato dal fornitore di gestione abbonamenti (RevenueCat), collegato all'account dell'utente.</p>
+      <p>Gli acquisti in-app sono gestiti direttamente da Apple (App Store) o Google (Google Play), a seconda della piattaforma utilizzata. TopNews non riceve, non visualizza e non memorizza in alcun modo i dati della carta di pagamento o altre informazioni finanziarie dell'utente: tali dati sono trattati esclusivamente da Apple/Google secondo le rispettive informative privacy.</p>
+      <p>Per la gestione tecnica degli abbonamenti (verifica dello stato, sincronizzazione tra dispositivi, gestione dei rinnovi), TopNews si avvale del fornitore RevenueCat, che riceve i dati elencati sopra ma non ha accesso ai dati di pagamento.</p>
+
+      <h3>3. Funzionalità di intelligenza artificiale</h3>
+      <p>TopNews utilizza sistemi di intelligenza artificiale per fornire funzionalità quali Scenario e Deep Dive/Full Analysis. Per generare tali contenuti possono essere elaborati e trasmessi ad Anthropic dati relativi alla notizia, quali titolo, descrizione, argomento derivato dal contenuto e altre informazioni pubbliche strettamente necessarie alla generazione. L'indirizzo email e l'UID dell'utente non vengono trasmessi ad Anthropic.</p>
+      <p>Le richieste vengono instradate attraverso Cloud Functions controllate da TopNews e protette mediante autenticazione. La funzionalità relativa agli hashtag è disabilitata nella versione beta.</p>
+      <p>Le generazioni prodotte dall'intelligenza artificiale possono contenere errori o imprecisioni e non devono essere considerate consulenza professionale o una previsione certa di eventi futuri.</p>
+
+      <h3>4. Finalità del trattamento</h3>
+      <p>I dati vengono trattati per:</p>
+      <ul>
+        <li>creare e gestire l'account;</li>
+        <li>autenticare l'utente;</li>
+        <li>fornire le funzionalità dell'App;</li>
+        <li>personalizzare il feed sulla base degli interessi selezionati;</li>
+        <li>memorizzare e gestire i like;</li>
+        <li>consentire la ricerca delle notizie;</li>
+        <li>fornire Scenario e Deep Dive/Full Analysis;</li>
+        <li>applicare i limiti giornalieri delle funzionalità AI;</li>
+        <li>gestire l'abbonamento Premium e verificare lo stato di sottoscrizione;</li>
+        <li>sbloccare le funzionalità riservate agli utenti abbonati;</li>
+        <li>gestire il ripristino degli acquisti su nuovi dispositivi;</li>
+        <li>garantire sicurezza, stabilità e corretto funzionamento dell'App;</li>
+        <li>prevenire utilizzi impropri del servizio;</li>
+        <li>rispondere alle richieste di assistenza;</li>
+        <li>gestire richieste relative alla protezione dei dati.</li>
+      </ul>
+
+      <h3>5. Base giuridica</h3>
+      <p>I trattamenti strettamente necessari alla creazione dell'account e alla fornitura delle funzionalità richieste dall'utente sono effettuati, ove applicabile, sulla base dell'esecuzione di un contratto o di misure precontrattuali richieste dall'interessato, ai sensi dell'art. 6(1)(b) GDPR.</p>
+      <p>Determinati trattamenti tecnici, di sicurezza e di prevenzione degli abusi possono essere effettuati sulla base del legittimo interesse del Titolare, ai sensi dell'art. 6(1)(f) GDPR.</p>
+      <p>Qualora una specifica attività di trattamento richieda il consenso dell'utente, tale trattamento sarà effettuato soltanto dopo aver acquisito il consenso richiesto.</p>
+
+      <h3>6. Fornitori e destinatari dei dati</h3>
+      <p><strong>Google Firebase e Google Cloud</strong><br>
+      TopNews utilizza servizi Google/Firebase per autenticazione, database, infrastruttura backend, Cloud Functions e gestione tecnica del servizio.<br>
+      <a class="link" href="https://cloud.google.com/privacy/gdpr" target="_blank">Google Cloud – GDPR e protezione dei dati</a></p>
+
+      <p><strong>Anthropic</strong><br>
+      TopNews utilizza Anthropic per alcune funzionalità di intelligenza artificiale. TopNews non trasmette ad Anthropic l'indirizzo email o l'UID dell'utente.<br>
+      <a class="link" href="https://privacy.anthropic.com/en/" target="_blank">Anthropic Privacy Center</a></p>
+
+      <p><strong>NewsAPI</strong><br>
+      TopNews utilizza NewsAPI per recuperare notizie e risultati di ricerca. TopNews non trasmette a NewsAPI l'email o l'UID dell'utente.<br>
+      <a class="link" href="https://newsapi.org/privacy" target="_blank">NewsAPI Privacy Policy</a></p>
+
+      <p><strong>RevenueCat</strong><br>
+      TopNews utilizza RevenueCat per la gestione tecnica degli abbonamenti in-app (verifica dello stato, sincronizzazione tra dispositivi, applicazione dei diritti Premium). RevenueCat non ha accesso ai dati della carta di pagamento.<br>
+      <a class="link" href="https://www.revenuecat.com/privacy/" target="_blank">RevenueCat Privacy Policy</a></p>
+
+      <p><strong>Apple App Store / Google Play (elaborazione pagamenti)</strong><br>
+      Gli acquisti in-app sono elaborati direttamente da Apple o Google, secondo la piattaforma utilizzata dall'utente. Tali soggetti agiscono come titolari autonomi del trattamento dei dati di pagamento.<br>
+      <a class="link" href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a> · <a class="link" href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+
+      <p><strong>Gmail</strong><br>
+      Le comunicazioni inviate volontariamente all'indirizzo di assistenza/privacy di TopNews possono essere gestite tramite Gmail.</p>
+
+      <h3>7. Conservazione dei dati</h3>
+      <table>
+        <tr><th>Dato</th><th>Conservazione</th></tr>
+        <tr><td>Dati dell'account</td><td>fino alla cancellazione dell'account</td></tr>
+        <tr><td>Interessi e preferenze account</td><td>fino alla cancellazione dell'account</td></tr>
+        <tr><td>Like associati all'utente</td><td>fino alla rimozione o cancellazione dell'account</td></tr>
+        <tr><td>Contatori utilizzo AI</td><td>fino alla cancellazione dell'account</td></tr>
+        <tr><td>Dati relativi all'abbonamento (stato, piano, date)</td><td>fino alla cancellazione dell'account, salvo obblighi fiscali/contabili più estesi eventualmente applicabili</td></tr>
+        <tr><td>Cache Scenario</td><td>30 giorni</td></tr>
+        <tr><td>Cache Deep Dive</td><td>30 giorni</td></tr>
+        <tr><td>Topic tags</td><td>90 giorni</td></tr>
+        <tr><td>Log degli scenari per verifica/calibrazione</td><td>12 mesi</td></tr>
+      </table>
+      <p>Le cache e i log condivisi relativi agli articoli non contengono l'email o l'UID dell'utente. Alcuni fornitori esterni possono applicare propri periodi di conservazione in conformità alle rispettive condizioni e informative.</p>
+
+      <h3>8. Dati memorizzati sul dispositivo</h3>
+      <p>TopNews può memorizzare localmente sul dispositivo alcune informazioni tecniche e preferenze necessarie al funzionamento dell'App, come la lingua dell'interfaccia e dati temporanei utilizzati per migliorare l'esperienza. Questi dati non vengono utilizzati per finalità pubblicitarie o di profilazione commerciale. I dati locali pertinenti vengono cancellati durante la procedura di eliminazione dell'account.</p>
+
+      <h3>9. Trasferimenti internazionali</h3>
+      <p>Alcuni fornitori utilizzati da TopNews possono trattare dati al di fuori dello Spazio Economico Europeo, inclusi gli Stati Uniti. Quando richiesto, tali trasferimenti sono effettuati sulla base degli strumenti previsti dalla normativa applicabile, che possono includere decisioni di adeguatezza, Clausole Contrattuali Standard ("SCC") o altre garanzie previste dal GDPR.<br>
+      <a class="link" href="https://cloud.google.com/terms/eu-model-contract-clause" target="_blank">Google Cloud – Clausole Contrattuali Standard UE</a></p>
+
+      <h3>10. Cancellazione dell'account</h3>
+      <p>L'utente può eliminare il proprio account utilizzando la funzione Elimina account disponibile nell'App. La cancellazione comporta la rimozione di: account Firebase Authentication, documento utente associato all'UID, interessi e preferenze associati all'account, contatori di utilizzo AI, like riconducibili all'utente, dati locali pertinenti memorizzati dall'App.</p>
+      <p>Le cache condivise relative agli articoli, agli Scenario e ai Deep Dive possono rimanere fino alla relativa scadenza quando non contengono UID, email o altri identificativi dell'utente.</p>
+
+      <h3>11. Diritti degli utenti</h3>
+      <p>Ai sensi degli artt. 15–22 GDPR, nei casi previsti dalla normativa l'utente può esercitare i propri diritti, tra cui: ottenere conferma dell'esistenza di dati personali che lo riguardano, accedere ai propri dati, chiedere la rettifica di dati inesatti, richiedere la cancellazione dei dati, richiedere la limitazione del trattamento, opporsi al trattamento nei casi previsti, ottenere la portabilità dei dati nei casi applicabili, revocare un eventuale consenso precedentemente prestato.</p>
+      <p>Per esercitare tali diritti è possibile contattare il Titolare all'indirizzo: <a class="link" href="mailto:top1news24h@gmail.com">top1news24h@gmail.com</a></p>
+      <p>L'interessato può inoltre proporre reclamo all'autorità di controllo competente. In Italia: <a class="link" href="https://www.garante.it" target="_blank">Garante per la protezione dei dati personali</a></p>
+
+      <h3>12. Minori</h3>
+      <p>TopNews può essere utilizzata anche da utenti minorenni. Ai sensi dell'art. 2-quinquies del D.lgs. 196/2003, nei casi in cui il consenso costituisca la base giuridica del trattamento, il minore che abbia compiuto 14 anni può prestare autonomamente il proprio consenso. Per il minore di 14 anni, il consenso deve essere prestato o autorizzato da chi esercita la responsabilità genitoriale.</p>
+      <p>TopNews non richiede intenzionalmente categorie particolari di dati personali ai minori.</p>
+
+      <h3>13. Categorie particolari di dati</h3>
+      <p>TopNews non richiede intenzionalmente dati appartenenti alle categorie particolari previste dall'art. 9 GDPR. Poiché la funzione di ricerca consente l'inserimento di testo libero, l'utente potrebbe volontariamente inserire informazioni di tale natura; gli utenti sono invitati a non farlo se non necessario.</p>
+
+      <h3>14. Pubblicità, analytics e tracking</h3>
+      <p>Nella versione beta descritta dalla presente informativa, TopNews non utilizza SDK pubblicitari o sistemi di tracking pubblicitario, inclusi Google Analytics/Firebase Analytics, Firebase Crashlytics, Google AdMob o SDK pubblicitari di terze parti. Qualora tali tecnologie venissero introdotte in futuro, la presente Privacy Policy sarà aggiornata.</p>
+
+      <h3>15. Condivisione degli articoli</h3>
+      <p>TopNews consente all'utente di condividere volontariamente contenuti tramite le funzionalità native del dispositivo. Il successivo trattamento effettuato dal servizio scelto è soggetto alle condizioni e all'informativa privacy di tale servizio.</p>
+
+      <h3>16. Assistenza e comunicazioni</h3>
+      <p>Quando l'utente contatta TopNews tramite email, possono essere trattati l'indirizzo email del mittente, il contenuto della comunicazione ed eventuali informazioni volontariamente fornite, utilizzate per rispondere alla richiesta.</p>
+
+      <h3>17. Sicurezza</h3>
+      <p>TopNews adotta misure tecniche e organizzative volte a proteggere i dati trattati: autenticazione tramite Firebase Authentication, credenziali API dei fornitori esterni non incorporate nel client, richieste verso Anthropic e NewsAPI instradate tramite Cloud Functions, credenziali dei servizi esterni gestite lato server, dati associati all'account separati tramite UID, log potenzialmente sensibili limitati all'ambiente di sviluppo.</p>
+      <p>Nonostante le misure adottate, nessun sistema informatico può garantire un livello assoluto di sicurezza.</p>
+
+      <h3>18. Decisioni automatizzate e contenuti AI</h3>
+      <p>TopNews utilizza sistemi automatizzati e di intelligenza artificiale per generare analisi e scenari relativi alle notizie, con finalità informativa e analitica. Gli scenari rappresentano possibili evoluzioni future e non costituiscono previsioni certe. TopNews non utilizza tali sistemi, nell'attuale versione beta, per assumere decisioni automatizzate ai sensi dell'art. 22 GDPR.</p>
+
+      <h3>19. Modifiche alla presente Privacy Policy</h3>
+      <p>La presente informativa potrà essere modificata in seguito all'introduzione di nuove funzionalità, nuovi fornitori, modifiche dell'architettura tecnica o variazioni della normativa applicabile. In caso di modifiche sostanziali, gli utenti saranno informati attraverso modalità appropriate. La data dell'ultimo aggiornamento sarà sempre indicata all'inizio della presente informativa.</p>
+
+      <p style="margin-top:32px; color:var(--muted);">
+        Titolare del trattamento: Giovanni Cipriani<br>
+        App: TopNews<br>
+        Contatto privacy: <a class="link" href="mailto:top1news24h@gmail.com">top1news24h@gmail.com</a><br>
+        Ultimo aggiornamento: 13 settembre 2026
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 TopNews — Giovanni Cipriani
+</footer>
+
+</body>
+</html>
