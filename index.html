@@ -184,7 +184,7 @@
       <p>I commenti sono sottoposti a una moderazione automatica basata su intelligenza artificiale prima della pubblicazione. Il testo inviato per la moderazione può essere registrato temporaneamente nei log tecnici, per un massimo di 30 giorni, per finalità diagnostiche e di controllo qualità del sistema di moderazione; tali log sono distinti dai commenti pubblicati e includono anche i contenuti non pubblicati.</p>
 
       <h3>5. Contenuti di terzi</h3>
-      <p>L'App aggrega notizie da fonti terze tramite servizi esterni (es. NewsAPI). TopNews non è responsabile dell'accuratezza, completezza o attualità dei contenuti provenienti da fonti esterne.</p>
+      <p>L'App aggrega titoli, brevi sintesi e collegamenti provenienti dai feed RSS pubblici delle testate giornalistiche. Ogni articolo rimanda al sito della testata di origine, che resta l'unica responsabile del contenuto. TopNews non è responsabile dell'accuratezza, completezza o attualità dei contenuti provenienti da fonti esterne.</p>
 
       <h3>6. Limitazione di responsabilità</h3>
       <p>Nei limiti consentiti dalla legge applicabile, TopNews viene fornita "così com'è", senza garanzie di alcun tipo. TopNews non è responsabile per danni diretti o indiretti derivanti dall'uso dell'App, incluso l'affidamento su contenuti o scenari generati dall'intelligenza artificiale.</p>
@@ -239,7 +239,7 @@
       TopNews memorizza contatori relativi all'utilizzo giornaliero delle funzionalità di intelligenza artificiale, come Scenario e Deep Dive/Full Analysis, esclusivamente per applicare i limiti di utilizzo previsti dal servizio.</p>
 
       <p><strong>2.5 Ricerche</strong><br>
-      Quando l'utente utilizza la funzione di ricerca, il testo inserito viene utilizzato per individuare notizie pertinenti e può essere trasmesso a NewsAPI. TopNews non memorizza le query di ricerca nel profilo dell'utente. L'utente è invitato a non inserire nelle ricerche informazioni personali o sensibili non necessarie.</p>
+      Quando l'utente utilizza la funzione di ricerca, il testo inserito viene utilizzato per individuare notizie pertinenti all'interno dell'archivio già raccolto da TopNews: la query resta nell'infrastruttura del servizio e non viene trasmessa a fornitori terzi di notizie. TopNews non memorizza le query di ricerca nel profilo dell'utente. L'utente è invitato a non inserire nelle ricerche informazioni personali o sensibili non necessarie.</p>
 
       <p><strong>2.6 Dati relativi all'abbonamento Premium</strong><br>
       Per fornire l'abbonamento Premium, TopNews tratta: stato dell'abbonamento (attivo, scaduto, in periodo di prova), tipologia di piano sottoscritto (settimanale o mensile), date di inizio e rinnovo, identificativo univoco assegnato dal fornitore di gestione abbonamenti (RevenueCat), collegato all'account dell'utente.</p>
@@ -285,9 +285,8 @@
       TopNews utilizza Anthropic per alcune funzionalità di intelligenza artificiale. TopNews non trasmette ad Anthropic l'indirizzo email o l'UID dell'utente.<br>
       <a class="link" href="https://privacy.anthropic.com/en/" target="_blank">Anthropic Privacy Center</a></p>
 
-      <p><strong>NewsAPI</strong><br>
-      TopNews utilizza NewsAPI per recuperare notizie e risultati di ricerca. TopNews non trasmette a NewsAPI l'email o l'UID dell'utente.<br>
-      <a class="link" href="https://newsapi.org/privacy" target="_blank">NewsAPI Privacy Policy</a></p>
+      <p><strong>Testate giornalistiche (feed RSS)</strong><br>
+      TopNews raccoglie titoli, brevi sintesi e collegamenti dai feed RSS pubblici delle testate giornalistiche. La raccolta avviene lato server, in modo programmato e identico per tutti gli utenti: le testate non ricevono dati dell'utente, né la sua email o il suo UID, né le parole inserite nella funzione di ricerca. Aprendo un articolo l'utente viene indirizzato al sito della testata, che applica la propria informativa privacy; le immagini sono collegate ai server della testata e non sono ospitate da TopNews.</p>
 
       <p><strong>RevenueCat</strong><br>
       TopNews utilizza RevenueCat per la gestione tecnica degli abbonamenti in-app (verifica dello stato, sincronizzazione tra dispositivi, applicazione dei diritti Premium). RevenueCat non ha accesso ai dati della carta di pagamento.<br>
@@ -308,6 +307,7 @@
         <tr><td>Like associati all'utente</td><td>fino alla rimozione o cancellazione dell'account</td></tr>
         <tr><td>Contatori utilizzo AI</td><td>fino alla cancellazione dell'account</td></tr>
         <tr><td>Dati relativi all'abbonamento (stato, piano, date)</td><td>fino alla cancellazione dell'account, salvo obblighi fiscali/contabili più estesi eventualmente applicabili</td></tr>
+        <tr><td>Archivio articoli del feed (titoli, sintesi, link)</td><td>90 giorni</td></tr>
         <tr><td>Cache Scenario</td><td>30 giorni</td></tr>
         <tr><td>Cache Deep Dive</td><td>30 giorni</td></tr>
         <tr><td>Topic tags</td><td>90 giorni</td></tr>
@@ -349,7 +349,7 @@
       <p>Quando l'utente contatta TopNews tramite email, possono essere trattati l'indirizzo email del mittente, il contenuto della comunicazione ed eventuali informazioni volontariamente fornite, utilizzate per rispondere alla richiesta.</p>
 
       <h3>17. Sicurezza</h3>
-      <p>TopNews adotta misure tecniche e organizzative volte a proteggere i dati trattati: autenticazione tramite Firebase Authentication, credenziali API dei fornitori esterni non incorporate nel client, richieste verso Anthropic e NewsAPI instradate tramite Cloud Functions, credenziali dei servizi esterni gestite lato server, dati associati all'account separati tramite UID, log potenzialmente sensibili limitati all'ambiente di sviluppo.</p>
+      <p>TopNews adotta misure tecniche e organizzative volte a proteggere i dati trattati: autenticazione tramite Firebase Authentication, credenziali API dei fornitori esterni non incorporate nel client, richieste verso Anthropic e raccolta dei feed RSS instradate tramite Cloud Functions, credenziali dei servizi esterni gestite lato server, dati associati all'account separati tramite UID, log potenzialmente sensibili limitati all'ambiente di sviluppo.</p>
       <p>Nonostante le misure adottate, nessun sistema informatico può garantire un livello assoluto di sicurezza.</p>
 
       <h3>18. Decisioni automatizzate e contenuti AI</h3>
